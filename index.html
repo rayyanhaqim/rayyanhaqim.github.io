@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="w-full bg-gray-500">
+
+<div class="w-full bg-cyan-500 text-white px-6 py-4 shadow-md">
+  <div class="flex justify-between items-center">
+    <!-- Logo / Brand -->
+    <div class="text-xl font-bold uppercase">
+      <a href="#">Rayyan Haqim</a>
+    </div>
+
+    <!-- Hamburger menu (visible on small screens) -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="focus:outline-none">
+        <!-- Icon: 3 lines -->
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path d="M4 5h16M4 12h16M4 19h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation links (hidden on small screens) -->
+    <div id="menu" class="hidden md:flex space-x-4">
+      <a href="javascript:open('index')" class="hover:underline">Home</a>
+      <a href="javascript:open('about')" class="hover:underline">About</a>
+      <a href="javascript:alert('Page not exist yet.')" class="hover:underline">Contact</a>
+    </div>
+  </div>
+
+  <!-- Mobile menu (shown on small screens when toggled) -->
+  <div id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-4">
+    <a href="javascript:open('index')" class="hover:underline">Home</a>
+    <a href="javascript:open('about')" class="hover:underline">About</a>
+    <a href="javascript:alert('Page not exist yet.')" class="hover:underline">Contact</a>
+  </div>
+</div>
+
+<div id="root">
+
+<div class="flex flex-col md:flex-row w-full h-auto md:h-screen bg-white">
+  <!-- Image Section -->
+  <div class="w-full md:w-1/2 h-64 md:h-full">
+    <img src="img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="Image" class="w-full h-full object-cover">
+  </div>
+
+  <!-- Text Section -->
+  <div class="w-full md:w-1/2 flex items-center justify-start p-6 md:p-10 bg-gray-500">
+    <div>
+      <section>
+        <div class="hero-container mb-1">
+          <div class="environment"></div>
+          <h2 class="hero glitch layers text-3xl font-bold text-cyan" data-text="Rayyan Haqim">
+            <span>Rayyan Haqim</span>
+          </h2>
+        </div>
+      </section>
+
+      <p class="text-white text-base text-justify leading-relaxed">
+        I’m a cybersecurity enthusiast and system researcher, with a strong focus on backend architecture,
+        vulnerability analysis, and system hardening.
+        I enjoy working with Linux, scripting, and building tools that improve digital security.
+        Currently exploring the balance between open-source freedom and system integrity.
+      </p>
+    </div>
+  </div>
+</div>
+
+</div>
+<script src="script.js?v=1" type="text/javascript"></script>
+
+</body>
+</html>
